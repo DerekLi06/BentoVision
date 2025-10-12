@@ -1,10 +1,15 @@
 import json
 import base64
 import io
+import os
 from PIL import Image
 import numpy as np
 import cv2
 from ultralytics import YOLO
+
+# Force CPU-only execution
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+os.environ['OMP_NUM_THREADS'] = '1'
 
 class Config:
     IMG_SIZE = 640
@@ -26,7 +31,9 @@ class Config:
     ]
 
 
+# Initialize model with CPU-only settings
 model = YOLO("best.onnx")
+# model.to('cpu') 
 
 def predict_image(base64_str, conf_threshold=0.03):
     # Perform inference on the image
