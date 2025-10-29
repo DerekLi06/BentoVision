@@ -21,4 +21,5 @@ This deep learning model was trained on 17,000+ unique images of Asian dishes pr
 
 ## AWS Deployment
 
-This model is dockerized and contained as a microservice through AWS EC2 and Lambda, and exposed for use through Amazon's API Gateway. This model's deployment is hosted on Netlify and can be found in this link below.
+This model is dockerized and contained as a microservice through AWS ECR and Lambda, and exposed for use through Amazon's API Gateway. This model's deployment is hosted on Netlify and can be found in this link below.
+
