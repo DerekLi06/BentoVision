@@ -15,3 +15,7 @@ This deep learning model was trained on 17,000+ unique images of Asian dishes pr
 - YOLOv8
 - OpenCV
 - HuggingFace
+- Typescript
+- React
+- Tailwind CSS
+
